@@ -1,0 +1,8 @@
+# This command can set defalut web browser
+
+
+# Check defalut web browser
+xdg-settings get default-web-browser
+
+# Change defalut web browser
+xdg-settings set default-web-browser firefox-esr.desktop    # Change FireFox
