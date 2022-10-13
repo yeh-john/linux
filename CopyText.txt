@@ -1,0 +1,8 @@
+# Copy text "Hello World"
+echo "Hello World" | xclip -sel clip
+
+# Copy file text
+cat file.txt | xclip -sel clip
+
+# Copy cpu temp
+sensors | grep -A 0 'Sensor' | cut -c1-24 > temp.txt && cat temp.txt | xclip -sel clip && rm -rf temp.txt
