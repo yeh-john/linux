@@ -1,0 +1,8 @@
+# Check hardware temp
+sensors
+
+# Check cpu temp info
+sensors | grep -A 0 'CPU NAME'
+
+# Check only cpu temp
+sensors | grep -A 0 'CPU NAME' | cut -c1-24
